@@ -2,15 +2,16 @@ package service.impl;
 
 import java.util.Optional;
 
+import model.Cliente;
+import model.ClienteRepository;
+import model.Endereco;
+import model.EnderecoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import one.digitalinnovation.gof.model.Cliente;
-import one.digitalinnovation.gof.model.ClienteRepository;
-import one.digitalinnovation.gof.model.Endereco;
-import one.digitalinnovation.gof.model.EnderecoRepository;
-import one.digitalinnovation.gof.service.ClienteService;
-import one.digitalinnovation.gof.service.ViaCepService;
+
+import service.ClienteService;
+import service.ViaCepService;
 
 /**
  * Implementação da <b>Strategy</b> {@link ClienteService}, a qual pode ser
@@ -32,6 +33,7 @@ public class ClienteServiceImpl implements ClienteService {
 
     // Strategy: Implementar os métodos definidos na interface.
     // Facade: Abstrair integrações com subsistemas, provendo uma interface simples.
+
 
     @Override
     public Iterable<Cliente> buscarTodos() {

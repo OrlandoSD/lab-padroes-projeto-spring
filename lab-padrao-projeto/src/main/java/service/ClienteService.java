@@ -1,6 +1,7 @@
 package service;
 
-import one.digitalinnovation.gof.model.Cliente;
+import model.Cliente;
+
 
 /**
  * Interface que define o padrão <b>Strategy</b> no domínio de cliente. Com
@@ -10,6 +11,7 @@ import one.digitalinnovation.gof.model.Cliente;
  * @author falvojr
  */
 public interface ClienteService {
+
 
     Iterable<Cliente> buscarTodos();
 
